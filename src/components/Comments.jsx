@@ -11,8 +11,7 @@ export default function Comments({article_id}){
     useEffect(()=>{
         ncNewsApi.get(`/articles/${article_id}/comments`).then(({data})=>{
             setIsLoading(false)
-            setComments(data)
-        console.log(typeof comments[0].created_at, comments[0].created_at)})
+            setComments(data)})
         
     }, [])
     const Comments = (
