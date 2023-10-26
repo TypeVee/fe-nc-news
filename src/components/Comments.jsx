@@ -27,8 +27,8 @@ export default function Comments({article_id}){
 
     return(
         <>
-        <h1>Comments</h1>
         <div className="CommentBox">
+        <h1>Comments</h1>
         {isLoading ? LoadingIcon() : Comments}
         </div>
         </>
