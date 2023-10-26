@@ -17,9 +17,6 @@ export default function () {
         return (
             <div>
                 <h1>Articles</h1>
-                <div>
-                    
-                </div>
                 <ul className="AllArticles">
                 {isLoading ? <LoadingIcon/> : articles.map((article)=>{
                     return <ArticleBox key={article.article_id} article={article}/>

@@ -1,5 +1,6 @@
 nav{
     display:flex;
     justify-content: space-between;
-    width:70vw;
+    width:auto;
+    overflow-wrap: break-word;
 }
