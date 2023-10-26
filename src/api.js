@@ -3,7 +3,7 @@ import axios from 'axios';
 const ncNewsApi = axios.create({
     baseURL: 'https://nc-news-sayb.onrender.com/api'
 })
-
+export default ncNewsApi
 export const fetchArticles = (()=>{
     return ncNewsApi.get('/articles')})
 

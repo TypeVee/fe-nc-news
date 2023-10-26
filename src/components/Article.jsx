@@ -30,7 +30,8 @@ export default function Article(){
     return(
         <div>
         {isLoading ? LoadingIcon() : Article}
-        <Comments id={article_id}/>
+        <div style={{clear:"right"}}></div>
+        <Comments article_id={article_id}/>
         </div>
     )
 }
