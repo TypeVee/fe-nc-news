@@ -2,5 +2,4 @@ nav{
     display:flex;
     justify-content: space-between;
     width:auto;
-    overflow-wrap: break-word;
 }

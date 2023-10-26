@@ -3,7 +3,7 @@ body {
     justify-content:space-around;
     background-color: #282c34;
     color: white;
-    padding: 40px;
+    padding: 2%;
     font-family: Arial;
     text-align: center;
   }
@@ -13,6 +13,7 @@ body {
     margin: 5px;
     color:#c7cacf;
     min-width:20vw;
+    max-width:40vw;
     flex-grow:1;
   }
     a:link{
@@ -33,4 +34,5 @@ body {
     font-family: Arial;
     overflow-y:auto;
     flex-flow:wrap;
+    justify-content: space-between;
   }
