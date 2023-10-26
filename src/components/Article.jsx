@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { fetchArticle } from "../api"
 import LoadingIcon from "./LoadingIcon.jsx"
 import "./Article.css"
+import Comments from "./Comments"
 
 export default function Article(){
     const {article_id} = useParams()
@@ -10,7 +11,6 @@ export default function Article(){
     const [isLoading, setIsLoading] = useState(true)
     useEffect(()=>{
         fetchArticle(article_id).then(({data})=>{
-            console.log("Loading")
             setIsLoading(false)
             setArticle(data.article)
         })    
@@ -30,6 +30,7 @@ export default function Article(){
     return(
         <div>
         {isLoading ? LoadingIcon() : Article}
+        <Comments id={article_id}/>
         </div>
     )
 }
