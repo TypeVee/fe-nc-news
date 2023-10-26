@@ -3,12 +3,12 @@ import ArticleBoxes from "./ArticleBoxes.css"
 
 export default function ({article}) {
     return (
-        
+        <Link to={`/Article/${article.article_id}`}>
         <div className="Article">
-            <Link to={`/Article/${article.article_id}`}>
-            <img src={article.article_img_url} style={{height:"20vh"}}alt="Article Image" />
+            <img src={article.article_img_url} style={{width:"100%"}}alt="Article Image" />
             <p>{article.title}</p>
-            </Link>
+            <p>By {article.author}</p>
        </div>
+       </Link>
     )
 }

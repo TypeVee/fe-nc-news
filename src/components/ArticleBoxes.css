@@ -8,14 +8,14 @@ body {
     text-align: center;
   }
   
-  .Article{
+.Article{
     border: 5px solid rgb(131, 127, 127);
     margin: 5px;
-    color:#282c34;
+    color:#c7cacf;
     width:30vw;
     height:auto;
   }
-a:link{
+    a:link{
     text-decoration: none;
     color:#ffffff;
   }
