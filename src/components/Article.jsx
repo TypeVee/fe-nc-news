@@ -6,6 +6,7 @@ import LoadingIcon from "./LoadingIcon.jsx"
 import "./Article.css"
 import Comments from "./Comments"
 import ncNewsApi from "../api"
+import CommentPost from "./CommentPost"
 
 export default function Article(){
     const {article_id} = useParams()
@@ -54,6 +55,8 @@ export default function Article(){
         <div>
         {isLoading ? LoadingIcon() : Article}
         <div style={{clear:"right"}}></div>
+        <hr></hr>
+        <CommentPost article_id={article_id}/>
         <Comments article_id={article_id}/>
         </div>
     )
