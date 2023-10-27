@@ -15,7 +15,7 @@ body {
     width:24vw;
     flex-grow:1;
   }
-    a:link{
+  a:link{
     text-decoration: none;
     color:#ffffff;
   }
@@ -34,4 +34,18 @@ body {
     overflow-y:auto;
     flex-flow:wrap;
     justify-content: space-between;
+  }
+
+  .AllTopics{
+    padding:0;
+    display:flex;
+    justify-content: center;
+  }
+  .TopicBox{
+    margin: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #6867a3;
+    min-height: 20vh;
+    width: 20vh;
+    /* flex-grow: 1; */
   }

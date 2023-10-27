@@ -15,9 +15,6 @@ export default function ({article_id}) {
             setUsers(data)
         })
     }, [])
-    useEffect(()=>{
-            
-    }, [])
     function checkUser(event){
         event.preventDefault()
         if(users.some((profile)=>profile.username === event.target[0].value)){

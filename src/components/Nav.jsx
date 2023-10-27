@@ -4,7 +4,7 @@ import "./Nav.css"
 export default function () {
     return (
         <nav>
-            <Link to="/Articles">Articles</Link>
+            <Link to="/Articles">All Articles</Link>
             <Link to="/Users">Users</Link>
             <Link to="/Topics">Topics</Link>
         </nav>
