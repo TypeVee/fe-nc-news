@@ -21,11 +21,12 @@ export default function Article(){
         })    
     }, [])
     function vote(up){
+        setVoted(true)
         ncNewsApi
         .patch(`/articles/${article_id}`, {inc_votes: (up.target.id === "voteUp" ? 1 : -1)})
         .then((response)=>{
             setVotes(response.data.votes) 
-            setVoted(true)
+            
         })
     }
     const Article = (
