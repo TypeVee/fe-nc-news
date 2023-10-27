@@ -10,6 +10,7 @@ export default function () {
     const [isLoading, setIsLoading] = useState(true)
     const [topics, setTopics] = useState([])
     const [articles, setArticles] = useState([])
+    const [renav, setRenav] = useState("")
 
     useEffect(()=>{
         ncNewsApi.get('/topics')
@@ -19,9 +20,10 @@ export default function () {
         })}, [])
 
     useEffect(()=>{
-        // if(topics.some(({slug})=>slug !== topic)){
-        //     <Navigate to="/Topics" replace={true} />
-        // }
+        if(topics.some(({slug})=>slug !== topic && topic !== undefined && topics !== undefined)){
+            setRenav("/Topics/")
+            setTopic("")
+        }
         }, [topics])
 
     useEffect(()=>{
@@ -59,7 +61,7 @@ export default function () {
                 <></>
             }
         </ul>
-        
+        <Navigate to={renav}/>
        </div>
     )
 }
