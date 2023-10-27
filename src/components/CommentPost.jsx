@@ -28,7 +28,8 @@ export default function ({article_id}) {
         else{
             console.log(users.some((profile)=>profile.username === event.target[0].value))
             setSignInClass("InvalidInput")
-            setUserError("Invalid Username")
+            if(users.length === 0) setUserError("Please wait")
+            else setUserError("Invalid Username")
         }
     }
     function postComment(event){
@@ -40,13 +41,14 @@ export default function ({article_id}) {
 
     const inputUser = (
         <div>
-        <p>To comment, please sign in:</p>
+        <p>To comment, please sign in with a valid account:</p>
         <form onSubmit={checkUser} className={"UserForm"}>
             <label>Username: 
             <input type="text" name="username" className={signInClass}></input>
             </label>
             <input type="submit" value="Sign in" ></input>
         </form>
+        <p>{userError}</p>
         </div>
     )
     const inputComment = (
