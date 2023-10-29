@@ -1,6 +1,7 @@
 
 import ncNewsApi from "../api";
 import "./Article.css";
+import Comments from "./Comments"
 import { useState, useEffect } from "react";
 
 export default function ({article_id}) {
@@ -66,9 +67,13 @@ export default function ({article_id}) {
     
 
     return (
+        <div>
         <div style={{alignItems:"start"}}>
-            
             {(postedComment? comment : signedIn ? inputComment : inputUser)}
+        </div>
+        <div>
+            <Comments article_id={article_id} user={user}/>
+        </div>
         </div>
     )
 }

@@ -57,7 +57,7 @@ export default function Article(){
         <div style={{clear:"right"}}></div>
         <hr></hr>
         <CommentPost article_id={article_id}/>
-        <Comments article_id={article_id}/>
+        
         </div>
     )
 }
