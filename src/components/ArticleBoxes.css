@@ -47,5 +47,5 @@ body {
     background-color: #6867a3;
     min-height: 20vh;
     width: 20vh;
-    /* flex-grow: 1; */
+    flex-grow: 1;
   }
