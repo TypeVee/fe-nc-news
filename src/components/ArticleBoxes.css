@@ -3,7 +3,7 @@ body {
     justify-content:space-around;
     background-color: #282c34;
     color: white;
-    padding: 40px;
+    padding: 2%;
     font-family: Arial;
     text-align: center;
   }
@@ -12,10 +12,10 @@ body {
     border: 5px solid rgb(131, 127, 127);
     margin: 5px;
     color:#c7cacf;
-    min-width:20vw;
+    width:24vw;
     flex-grow:1;
   }
-    a:link{
+  a:link{
     text-decoration: none;
     color:#ffffff;
   }
@@ -33,4 +33,19 @@ body {
     font-family: Arial;
     overflow-y:auto;
     flex-flow:wrap;
+    justify-content: space-between;
+  }
+
+  .AllTopics{
+    padding:0;
+    display:flex;
+    justify-content: center;
+  }
+  .TopicBox{
+    margin: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #6867a3;
+    min-height: 20vh;
+    width: 20vh;
+    flex-grow: 1;
   }

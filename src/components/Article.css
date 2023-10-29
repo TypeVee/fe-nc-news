@@ -4,3 +4,53 @@
     word-wrap:normal;
     text-align: justify;
 }
+
+.CommentBox{
+    margin:5%;
+    max-width:600px;
+}
+
+.voting{
+    border: none;
+    margin: 0px;
+    text-align:center;
+}
+.voting button{
+    width: 100%;
+    min-height: 6vh;
+    border: none;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.VoteDown:hover{
+    background-color: #992e2e;
+}
+.VoteDown:active{
+    box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.VoteDown:disabled{
+    transform: translateY(4px);
+    transition-delay: 9999999s;
+    cursor:not-allowed
+}
+
+
+.VoteUp:hover{
+    background-color: #37992e;
+}
+.VoteUp:active{
+    box-shadow: 0 -5px #666;
+  transform: translateY(-4px);
+}
+.VoteUp:disabled{
+    transform: translateY(-4px);
+    transition-delay: 9999999s; /*This is the worst solution, but I'll take it*/
+    cursor:not-allowed
+}
+
+.InvalidInput{
+    border-color: red;
+}

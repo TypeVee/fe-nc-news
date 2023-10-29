@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchArticles } from "../api";
 import ArticleBox from "./ArticleBox";
-import ArticleBoxes from "./ArticleBoxes.css"
+import "./ArticleBoxes.css"
 import LoadingIcon from "./LoadingIcon";
 
 export default function () {
