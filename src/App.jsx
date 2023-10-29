@@ -11,6 +11,7 @@ function App() {
     <main>
       <Nav/>
       <Routes>
+        <Route path="/" element={<AllArticles/>}/>
         <Route path="/Articles" element={<AllArticles />}/>
         <Route path="/Article/:article_id" element={<Article/>}/>
         <Route path="/Topics/:topic" element={<Topic/>}/>

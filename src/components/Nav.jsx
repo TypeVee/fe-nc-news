@@ -5,7 +5,7 @@ export default function () {
     return (
         <nav>
             <Link to="/Articles">All Articles</Link>
-            <Link to="/Users">Users</Link>
+            {/* <Link to="/Users">Users</Link> */}
             <Link to="/Topics">Topics</Link>
         </nav>
     )
